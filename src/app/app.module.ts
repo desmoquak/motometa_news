@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutFullModule } from './layouts/layout-full/layout-full.module';
 import { LayoutSideModule } from './layouts/layout-side/layout-side.module';
+import { RowComponent } from './pages/row/row.component';
+import { ColumnComponent } from './pages/column/column.component';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RowComponent, ColumnComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
