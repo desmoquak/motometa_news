@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LayoutSideComponent } from './layout-side.component';
-import { ColumnComponent } from 'src/app/pages/column/column.component';
-import { RowComponent } from 'src/app/pages/row/row.component';
+import { ColExampleComponent } from 'src/app/pages/col-example/col-example.component';
+import { RowExampleComponent } from 'src/app/pages/row-example/row-example.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
-  declarations: [
-    LayoutSideComponent, ColumnComponent, RowComponent
-  ],
-  imports: [CommonModule, SharedModule],
+  declarations: [LayoutSideComponent, ColExampleComponent, RowExampleComponent],
+  imports: [CommonModule, SharedModule, RouterModule],
 })
-
 export class LayoutSideModule {}
