@@ -1,5 +1,21 @@
-<header class="container-outer">
-	<div class="container">Outer Logo Container</div>
-	<div class="container">Outer Search field Container</div>
-	<div class="container">Outer Links Container</div>
+<header
+  class="container-outer"
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+>
+  <div class="container" fxFlex="20">
+    <div class="container-inner">
+      <a [routerLink]="['']" routerLintActive="'router-link-active">HOME</a>
+    </div>
+  </div>
+  <div class="container" fxFlex="80">
+    <div class="container-inner">Search Field Component goes here</div>
+  </div>
+  <div class="container" fxFlex="20">
+    <div class="container-inner">
+      <a [routerLink]="['/row-examples']" routerLinkActive="router-link-Active"
+        >Examples</a
+      >
+    </div>
+  </div>
 </header>
