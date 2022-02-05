@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutFullModule } from './layouts/layout-full/layout-full.module';
 import { LayoutSideModule } from './layouts/layout-side/layout-side.module';
-
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +16,8 @@ import { LayoutSideModule } from './layouts/layout-side/layout-side.module';
     FlexLayoutModule,
     LayoutSideModule,
     LayoutFullModule,
+
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
